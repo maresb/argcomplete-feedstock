@@ -1,9 +1,11 @@
+{% set version = "3.8.2" %}
+
 package:
   name: argcomplete
-  version: "1.8.2"
+  version: {{ version }}
 
 source:
-  fn: argcomplete-1.8.2.tar.gz
+  fn: argcomplete-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/a/argcomplete/argcomplete-{{ version }}.tar.gz
   md5: 1234c0e0db38c5181d8062177361cc4b
 
