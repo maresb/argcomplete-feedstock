@@ -1,4 +1,4 @@
-{% set version = "1.9.4" %}
+{% set version = "1.9.5" %}
 
 package:
   name: argcomplete
@@ -7,10 +7,10 @@ package:
 source:
   fn: argcomplete-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/a/argcomplete/argcomplete-{{ version }}.tar.gz
-  md5: 9bb3b61a849f84723e63051240f74014
+  md5: ad457d56d0c56b9feadae018d31741bf
 
 build:
-  number: 1001
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   noarch: python
     
