@@ -15,13 +15,11 @@ build:
   noarch: python
     
 requirements:
-  build:
+  host:
     - python
     - setuptools
-
   run:
     - python
-
 test:
   imports:
     - argcomplete
