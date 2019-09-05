@@ -10,17 +10,17 @@ source:
   md5: 9bb3b61a849f84723e63051240f74014
 
 build:
-  number: 1000
-  script: python setup.py install
-
+  number: 1001
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  noarch: python
+    
 requirements:
-  build:
+  host:
     - python
     - setuptools
-
+    - pip
   run:
     - python
-
 test:
   imports:
     - argcomplete
@@ -37,3 +37,4 @@ about:
 extra:
   recipe-maintainers:
     - asmeurer
+    - xylar
