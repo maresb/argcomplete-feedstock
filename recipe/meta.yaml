@@ -1,4 +1,4 @@
-{% set version = "1.9.5" %}
+{% set version = "1.10.0" %}
 
 package:
   name: argcomplete
@@ -7,7 +7,7 @@ package:
 source:
   fn: argcomplete-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/a/argcomplete/argcomplete-{{ version }}.tar.gz
-  md5: ad457d56d0c56b9feadae018d31741bf
+  md5: 74788e9d96262491281475cdac1320d4
 
 build:
   number: 0
