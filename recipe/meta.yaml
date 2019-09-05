@@ -10,7 +10,7 @@ source:
   md5: 9bb3b61a849f84723e63051240f74014
 
 build:
-  number: 1000
+  number: 1001
   script: python setup.py install
 
 requirements:
@@ -37,3 +37,4 @@ about:
 extra:
   recipe-maintainers:
     - asmeurer
+    - xylar
