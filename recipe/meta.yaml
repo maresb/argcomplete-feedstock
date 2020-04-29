@@ -33,7 +33,7 @@ test:
 
 about:
   home: https://github.com/kislyuk/argcomplete
-  license: Apache 2.0
+  license: Apache-2.0
   summary: 'Bash tab completion for argparse'
   license_family: Apache
   license_file: LICENSE.rst
