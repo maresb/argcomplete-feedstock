@@ -10,10 +10,10 @@ source:
   md5: cea45ef497df274438b75bcb2a8eb011
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   noarch: python
-    
+
 requirements:
   host:
     - python
@@ -21,13 +21,19 @@ requirements:
     - pip
   run:
     - python
+    - importlib_metadata
+
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - argcomplete
 
 about:
   home: https://github.com/kislyuk/argcomplete
-  license: Apache 2.0
+  license: Apache-2.0
   summary: 'Bash tab completion for argparse'
   license_family: Apache
   license_file: LICENSE.rst
