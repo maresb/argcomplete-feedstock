@@ -1,4 +1,4 @@
-{% set version = "1.11.1" %}
+{% set version = "1.12.0" %}
 
 package:
   name: argcomplete
@@ -7,11 +7,11 @@ package:
 source:
   fn: argcomplete-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/a/argcomplete/argcomplete-{{ version }}.tar.gz
-  md5: cea45ef497df274438b75bcb2a8eb011
+  md5: 47e2a3db821f57165be8f3d3ec1e5259
 
 build:
-  number: 1
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
 requirements:
@@ -34,7 +34,7 @@ test:
 about:
   home: https://github.com/kislyuk/argcomplete
   license: Apache-2.0
-  summary: 'Bash tab completion for argparse'
+  summary: Bash tab completion for argparse
   license_family: Apache
   license_file: LICENSE.rst
   doc_url: https://argcomplete.readthedocs.io
