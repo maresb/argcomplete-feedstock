@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python
-    - importlib_metadata
+    - importlib_metadata >=0.23,< 3
 
 test:
   requires:
