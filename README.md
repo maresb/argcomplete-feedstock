@@ -5,11 +5,13 @@ Home: https://github.com/kislyuk/argcomplete
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/argcomplete-feedstock/blob/master/LICENSE.txt)
 
 Summary: Bash tab completion for argparse
 
+Development: https://github.com/kislyuk/argcomplete
 
+Documentation: https://argcomplete.readthedocs.io
 
 Current build status
 ====================
