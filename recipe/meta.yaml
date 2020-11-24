@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.5
     - setuptools
     - pip
   run:
-    - python
-    - importlib_metadata >=0.23,< 3
+    - python >=3.5
+    - importlib_metadata >=0.23,<4
 
 test:
   requires:
