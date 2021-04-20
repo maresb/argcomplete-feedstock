@@ -10,7 +10,7 @@ source:
   md5: ded03f9c5d41c193dfe5869634d78211
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
@@ -21,6 +21,8 @@ requirements:
     - pip
   run:
     - python >=3.5
+    # This is listed upstream in extras_require but is, in fact, required
+    - importlib_metadata >=0.23,<4
 
 test:
   requires:
